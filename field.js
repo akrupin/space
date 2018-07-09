@@ -16,8 +16,7 @@ Field.prototype.restrictOffset = function() {
 }
 
 Field.prototype.createPlanets = function (count) {
-    for (let i = 0; i < PLANET_COUNT; i++) {
-        // let planet = Planet.locateRandomly(planets)
+    for (let i = 0; i < count; i++) {
         let planet = this.locatePlanet()
 
         planet.init(document.body)

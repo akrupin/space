@@ -1,0 +1,18 @@
+body {
+    background: black;
+    height: 100%;
+}
+#canvas {
+    width: 500px;
+    height: 500px;
+    background: white;
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% - 250px);
+}
+.cell{
+    border: 1px solid #888;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+}
