@@ -10,9 +10,28 @@ body {
     top: calc(50% - 250px);
     left: calc(50% - 250px);
 }
+
+#type {
+    position:absolute;
+    top: calc(50% - 250px - 40px);
+    right: calc(50% - 250px);
+    font-size: 24px;
+}
 .cell{
     border: 1px solid #888;
     width: 48px;
     height: 48px;
     position: absolute;
+}
+.cell-black{
+    background:black ;
+}
+.cell-white{
+    background: white;
+}
+.cell-black.cell-green {
+    background-color: darkgreen;
+}
+.cell-white.cell-green {
+    background-color: lightgreen;
 }
