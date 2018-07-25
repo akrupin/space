@@ -2,14 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="style.css" rel="stylesheet">
+    <title>Paint</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+          integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+          crossorigin="anonymous"
+    >
 </head>
 <body>
+    <div id="controls">
 
-    <!--<div class="bullet"></div>-->
-    <script type="text/javascript" src="planet.js"></script>
-    <script type="text/javascript" src="field.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+        <input type="color" id="color" name="color" value="#000000" />
+
+        <button class="tool-selector" onclick="selectTool('pen')">
+            <i class="fas fa-pen"></i>
+        </button>
+        <button class="tool-selector" onclick="selectTool('brush')">
+            <i class="fas fa-brush"></i>
+        </button>
+        <button class="tool-selector" onclick="selectTool('bitter')">
+            <i class="fas fa-bitter"></i>
+        </button>
+    </div>
+
+    <canvas id="canvas" width="500" height="500">
+    </canvas>
+
+    <script src="index.js"></script>
 </body>
 </html>

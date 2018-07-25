@@ -1,48 +1,32 @@
+html, body {
+    height: 100%;
+}
+
 body {
-    background: #000;
-    /*background-image: url('img/space.png');*/
-    /*background-repeat: repeat;*/
-    margin: 0;
+    background: black;
     padding: 0;
-    overflow: hidden;
+    margin: 0;
 }
 
-.bullet {
+#canvas {
     position: absolute;
-    width: 4px;
-    height: 25px;
     background: white;
-    top: 100px;
     left: 100px;
+    top: 5px;
 }
 
-#ship{
-    position: absolute;
-    height: 50px;
+#controls {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+}
+
+.tool-selector {
     width: 50px;
-    background: url('img/ship.png');
-    background-size: contain;
+    height: 50px;
+    font-size: 30px;
 }
-
-.planet {
-    position: absolute;
-    background-size: contain;
-    /*background: #aaa;*/
-    /*border-radius: 50%;*/
-}
-
-.vector {
-    position: absolute;
-    top: 50%;
-    height: 1px;
-    background: white;
-    left: 50%;
-    transform-origin: top left;
-}
-
-.vector.speed {
-    background: green;
-}
-.vector.force {
-    background: red;
+.bitter {
+    color: white;
 }
